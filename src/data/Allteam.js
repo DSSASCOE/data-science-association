@@ -100,8 +100,13 @@ var Allteam = [
       "name": "Mr.Rushikesh Wani",
       "designation": "Promotional Marketing Head of DSSA",
       "category": "magzine"
-  }
-
+  },  {
+    "src": "https://i.postimg.cc/hv7QffLN/lady-representative.jpg",
+    "name": "Ms.Nicky Shirgadi",
+    "designation": "LADY REPRESENTATIVE of DSSA",
+    "category": "magzine"
+}
+  
 ]
 
 export default Allteam
