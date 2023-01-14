@@ -58,7 +58,7 @@ const Projects = () => {
                                     <div className="lg:w-1/3 md:w-1/2 w-full shadow-2xl  overflow-hidden p-2" key={singleroject.href} data-aos="zoom-out" data-aos-delay="100">
                                         <div data-aos="fade-up" data-aos-delay="300" className=" mr-2 rounded-lg h-64 overflow-y-hidden  portfolio-item filter-app" style={{ backgroundImage: `url(${singleroject.src})`,  backgroundSize: 'cover' }}>
                                             <div className="portfolio-info bg-slate-700">
-                                                <h4 className='text-3xl text-white text1 pb-5'>{singleroject.type}</h4>
+                                                <h4 className='text-3xl text-white text1 pb-5'>{singleroject.title}</h4>
                                                 <p className='text-white text-xs pb-5'>{singleroject.description}</p>
                                                 <a href={singleroject.href} className="text-gray-200 text-sm py-2 border rounded-lg px-5  inline-flex items-center">View code</a>
                                             </div>

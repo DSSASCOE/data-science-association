@@ -14,6 +14,7 @@ import Teams from './pages/team';
 import Home from './pages';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Nakshatra from './pages/Nakshatra';
 function App() {
   AOS.init();
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/about" element={<Abouts />} />
           <Route path="/gallery" element={<Gallerys />} />
           <Route path="/project" element={<Projects />} />
+          <Route path="/nakshatra" element={<Nakshatra/>} />
           <Route path="/contact" element={<Contacts />} />
           <Route path="/achievement" element={<Achievement />} />
           <Route path="/team" element={<Teams />} />

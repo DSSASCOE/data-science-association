@@ -42,23 +42,6 @@ var Allteam = [
       "category": "cultural"
   },
   {
-      "src": "https://i.postimg.cc/d0yQM6MW/magazine1.jpg",
-      "name": "Ms.Srushti Sonawane",
-      "designation": " Magizine Co-ordinators of DSSA",
-      "category": "magzine"
-  },
-  {
-      "src": "https://i.postimg.cc/SQrSpj5p/magazine2.jpg",
-      "name": "Ms.Shaleha Khan",
-      "designation": " Magizine Co-ordinators of DSSA",
-      "category": "magzine"
-  }, {
-      "src": "https://i.postimg.cc/9MHmc9Cc/pr-marketing.jpg",
-      "name": "Mr.Rushikesh Wani",
-      "designation": "Promotional Marketing Head of DSSA",
-      "category": "magzine"
-  },
-  {
       "src": "https://i.postimg.cc/x1rNXX0F/technical-head.jpg",
       "name": "Mr. Tejas Mayekar",
       "designation": "Technical Head of DSSA",
@@ -78,10 +61,45 @@ var Allteam = [
       "category": "technical"
   },
   {
-      "src": "https://i.postimg.cc/RVJnC7zH/sports-member.jpg",
-      "name": "Mr.Samarth Khade",
+      "src": "https://i.postimg.cc/G22G8SVd/Sports-head-2.jpg",
+      "name": "Mr.Sahil Yadav",
       "designation": "Sports Head of DSSA",
       "category": "sports"
+  },
+  {
+      "src": "https://i.postimg.cc/RVJnC7zH/sports-member.jpg",
+      "name": "Mr.Samarth Khade",
+      "designation": "Sports Member of DSSA",
+      "category": "sports"
+  },
+  {
+      "src": "https://i.postimg.cc/d0yQM6MW/magazine1.jpg",
+      "name": "Ms.Srushti Sonawane",
+      "designation": " Magizine Co-ordinators of DSSA",
+      "category": "magzine"
+  },
+  {
+      "src": "https://i.postimg.cc/SQrSpj5p/magazine2.jpg",
+      "name": "Mr.Raj Pawar",
+      "designation": " Magizine Co-ordinators of DSSA",
+      "category": "magzine"
+  }, 
+  {
+      "src": "https://i.postimg.cc/dQfmdwJX/Social-Media-Photography-1.jpg",
+      "name": "Mr.Prathamesh Katkar",
+      "designation": " Magizine Co-ordinators of DSSA",
+      "category": "magzine"
+  },
+  {
+      "src": "https://i.postimg.cc/qMCcxSR7/Social-Media-Photography-2.jpg",
+      "name": "Ms.Shaleha Khan",
+      "designation": " Magizine Co-ordinators of DSSA",
+      "category": "magzine"
+  },  {
+      "src": "https://i.postimg.cc/9MHmc9Cc/pr-marketing.jpg",
+      "name": "Mr.Rushikesh Wani",
+      "designation": "Promotional Marketing Head of DSSA",
+      "category": "magzine"
   }
 
 ]

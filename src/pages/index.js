@@ -6,6 +6,8 @@ import Navbarindex from './navbarindex';
 import { FiFacebook } from 'react-icons/fi';
 import { FiTwitter } from 'react-icons/fi';
 import { FiInstagram } from 'react-icons/fi';
+import { AiOutlineArrowLeft } from 'react-icons/ai';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 import { FiLinkedin } from 'react-icons/fi';
 import { AiOutlineUnorderedList } from 'react-icons/ai';
 import { AiFillGithub } from 'react-icons/ai';
@@ -14,6 +16,8 @@ import Footer from './footer';
 import { Link } from 'react-router-dom';
 import achievements from '../data/achievements';
 import Hometeam from '../data/hometeam';
+import { Autoplay } from "swiper";
+import Sponser from '../data/Sponser';
 export default function Home() {
   const [height, setheight] = useState(false)
   useEffect(() => {
@@ -50,17 +54,17 @@ export default function Home() {
               <div className="icon-box " data-aos="fade-up" data-aos-delay="100">
                 <div className="icon"><FiInstagram className='icon-m' /></div>
               </div>
-            </a>            
+            </a>
             <a href='https://www.instagram.com/dssa_scoe/'>
               <div className="icon-box ml-2 mr-2" data-aos="fade-up" data-aos-delay="200">
                 <div className="icon"><FiLinkedin className='icon-m' /></div>
               </div>
-            </a>         
+            </a>
             <a href='https://www.instagram.com/dssa_scoe/'>
               <div className="icon-box" data-aos="fade-up" data-aos-delay="300">
                 <div className="icon"><AiFillGithub className='icon-m' /></div>
               </div>
-            </a>         
+            </a>
           </div>
         </div>
       </section>
@@ -167,92 +171,54 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="call-to-action" className="call-to-action">
-        <div className=" text-center" data-aos="fade-up">
-          <div className="justify-center">
-            <div className="lg:w-1/2 w-full lg:left-80  left-0 relative text-center">
-              <h3 className='text-3xl pb-5 text-white'>"Advocating for student success."</h3>
-              <p className='text-sm pb-3 text-white'>Its important to support and empower others to succeed in their academic and personal goals</p>
-              <a className="cta-btn text-white" href="/">Call To Action</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id='achievements' className='md:mx-6 md:px-6 px-2  pt-5'>
+      <section id="testimonials" className=" testimonials pb-10 lg:ml-10 md:ml-5 ml-0">
         <header className="section-header pb-5 text-center ">
-          <h3 className='lg:text-5xl text-3xl'>Our Achievements</h3>
+          <h3 className='lg:text-5xl text-3xl'>Our Sponsers</h3>
           <p className='md:px-56 px-5 pb-5'>"Honoring the dedication and determination that lead to success."</p>
         </header>
-        <section id="testimonials" className=" testimonials">
-          <div className="container lg:block md:hidden hidden" data-aos="fade-up">
-            <Swiper
-              spaceBetween={50}
-              slidesPerView={3}
-            >
-              <SwiperSlide>
-                <div className="swiper-slide">
-                  <div className="testimonial-item">
-                    <p className='text-black md:text-xl text-md font-bold'>.
-                    </p>
-                    <div className="profile mt-auto">
-                      <h3>.</h3>
+        <div className=" container shadow-xl block " data-aos="fade-up">
+          <Swiper
+            spaceBetween={50}
+            slidesPerView={1}
+          >
+            {(Sponser.map((achievements) => {
+              return (
+                <SwiperSlide>
+                  <div className=" w-full  rounded-3xl flex flex-wrap px-20 py-10" key={achievements.description}>
+                    <div className='w-full lg:w-1/3 h-96 z-50 rounded-3xl overflow-hidden'>
+                      <Swiper
+                        autoplay={{
+                          delay: 1000
+                        }
+                        }
+                        spaceBetween={50}
+                        slidesPerView={1}
+                        modules={[Autoplay]}
+                      ><SwiperSlide>
+                          <div className='h-96' style={{ backgroundImage: "url(https://i.postimg.cc/y835pm66/wallpainting-4.jpg)" }}>
+                          </div></SwiperSlide>
+                        <SwiperSlide>
+                          <div className='h-96' style={{ backgroundImage: "url(https://i.postimg.cc/y835pm66/wallpainting-4.jpg)" }}>
+                          </div></SwiperSlide>
+                        <SwiperSlide>
+                          <div className='h-96' style={{ backgroundImage: "url(https://i.postimg.cc/y835pm66/wallpainting-4.jpg)" }}>
+                          </div></SwiperSlide></Swiper>
                     </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              {(achievements.map((achievements) => {
-                return (
-                  <SwiperSlide>
-                    <div className="swiper-slide" key={achievements.description}>
-                      <div className="testimonial-item">
-                        <p className='text-black text-md font-bold'>
-                          {achievements.description}
-                        </p>
-                        <div className="profile mt-auto">
-                          <h1 className='text-2xl text1 pb-5'>{achievements.title}</h1>
-                        </div>
+                    <div className="w-full flex flex-col lg:w-2/3" >
+                      <p className='p-10 text-black text-md font-bold'>
+                        {achievements.description}
+                      </p>
+                      <div className="profile mt-auto px-20 lg:px-60">
+                        <h1 className='text-2xl text1 pb-10  text-center'>{achievements.title}</h1>
                       </div>
                     </div>
-                  </SwiperSlide>
-                )
-              }))}
-              <SwiperSlide>
-                <div className="swiper-slide">
-                  <div className="testimonial-item">
-                    <p className='text-black  text-md font-bold'>.
-                    </p>
-                    <div className="profile mt-auto">
-                      <h3>.</h3>
-                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            </Swiper>
-          </div>
-          <div className="lg:hidden md:block block" data-aos="fade-up">
-            <Swiper
-              spaceBetween={5}
-              slidesPerView={1}
-            >
-              {(achievements.map((achievements) => {
-                return (
-                  <SwiperSlide>
-                    <div className="swiper-slide" key={achievements.description}>
-                      <div className="testimonial-item">
-                        <p className='text-black md:text-xl text-md font-bold'>
-                          {achievements.description}
-                        </p>
-                        <div className="profile mt-auto">
-                          <h3 className='text-4xl text1 pb-5'>{achievements.title}</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                )
-              }))}
-            </Swiper>
-          </div>
-        </section>
+                </SwiperSlide>
+              )
+            }))}
+          </Swiper>
+          <div className="container shadow-xl "><div className='flex text-center justify-center'><span className='p-3 bg-slate-50'><AiOutlineArrowLeft/></span><span className='pt-2 px-4'>swipe</span><span className='p-3 bg-slate-50'><AiOutlineArrowRight/></span></div></div>
+        </div>       
       </section>
       <section id="team" className="team">
         <div className="">
@@ -294,6 +260,92 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <section id='achievements' className='md:mx-6 md:px-6 px-2  pt-5'>
+        <header className="section-header pb-5 text-center ">
+          <h3 className='lg:text-5xl text-3xl'>Our Achievements</h3>
+          <p className='md:px-56 px-5 pb-5'>"Honoring the dedication and determination that lead to success."</p>
+        </header>
+        <section id="testimonials" className=" testimonials">
+          <div className="container lg:block md:hidden hidden" data-aos="fade-up">
+            <Swiper
+              spaceBetween={50}
+              slidesPerView={3}
+            >
+              <SwiperSlide>
+                <div className="swiper-slide opacity-30">
+                  <div className="testimonial-item">
+                    <p className='text-black md:text-xl text-md font-bold'>.
+                    </p>
+                    <div className="profile mt-auto">
+                      <h3>.</h3>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              {(achievements.map((achievements) => {
+                return (
+                  <SwiperSlide>
+                    <div className="swiper-slide opacity-30" key={achievements.description}>
+                      <div className="testimonial-item">
+                        <p className='text-black text-md font-bold'>
+                          {achievements.description}
+                        </p>
+                        <div className="profile mt-auto">
+                          <h1 className='text-2xl text1 pb-5'>{achievements.title}</h1>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                )
+              }))}
+              <SwiperSlide>
+                <div className="swiper-slide opacity-30">
+                  <div className="testimonial-item">
+                    <p className='text-black  text-md font-bold'>.
+                    </p>
+                    <div className="profile mt-auto">
+                      <h3>.</h3>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+          <div className="lg:hidden md:block block" data-aos="fade-up">
+            <Swiper
+              spaceBetween={5}
+              slidesPerView={1}
+            >
+              {(achievements.map((achievements) => {
+                return (
+                  <SwiperSlide>
+                    <div className="swiper-slide opacity-30" key={achievements.description}>
+                      <div className="testimonial-item">
+                        <p className='text-black md:text-xl text-md font-bold'>
+                          {achievements.description}
+                        </p>
+                        <div className="profile mt-auto">
+                          <h3 className='text-4xl text1 pb-5'>{achievements.title}</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                )
+              }))}
+            </Swiper>
+          </div>
+        </section>
+        <div className='py-5 text-center'>
+          <Link to="/achievement">
+            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75  rounded-md group-hover:bg-opacity-0">
+                See All
+              </span>
+            </button>
+          </Link>
+        </div>
+      </section>
+      
       <Footer />
     </>
   )

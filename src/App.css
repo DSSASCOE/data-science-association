@@ -70,6 +70,14 @@ video[poster] {
 .call-to-action {
   background-attachment: fixed;
 }
+.call-to-actio {
+  background: linear-gradient(rgba(27, 47, 69, 0.8), rgba(27, 47, 69, 0.8)), url(../public/assets/cta-bg.jpg) center center;
+  background-size: cover;
+  padding: 10px 0;
+}
+.call-to-actio {
+  background-attachment: fixed;
+}
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
@@ -80,7 +88,7 @@ video[poster] {
   z-index: 3;
   transition: all ease-in-out 0.5s;
   /* background: rgb(113, 122, 131); */
-  padding: 15px;
+  padding: 1px;
 
 }
 
@@ -105,12 +113,10 @@ video {
   padding: 30px;
   margin: 40px 30px;
   box-shadow: 0px 10px 10px rgb(5, 0, 0);
-  /* background: #fff; */
   min-height: 320px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* transition: 0.3s; */
 }
 
 .testimonials .testimonial-item h3 {
@@ -128,9 +134,6 @@ video {
   margin: 0 auto 5px auto;
 }
 
-.testimonials .swiper-slide {
-  opacity: 0.3;
-}
 
 @media (max-width: 1199px) {
   .testimonials .swiper-slide-active {

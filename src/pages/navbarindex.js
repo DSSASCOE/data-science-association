@@ -56,7 +56,9 @@ export default function Navbarindex(props) {
               <li>
                 <Link to="/project" className="block py-2 pl-1  md:border-0  md:p-0 text-white  ">Projects</Link>
               </li>
-
+              <li>
+                <Link to="/nakshatra" className="block py-2 pl-1  md:border-0  md:p-0 text-white ">Nakshatra</Link>
+              </li>
               <li>
                 <Link to="/contact" className="block py-2 pl-1 md:border-0  md:p-0 text-white  ">Contact</Link>
               </li>
