@@ -39,7 +39,7 @@ const Nakshatra = () => {
                 </div>
             </section>
 
-            <section id="portfolio" className="portfolio w-3/4">
+            <section id="portfolio" className="portfolio">
                 <div className="py-20" data-aos="fade-up">
                     <div className="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
                         <ul className="portfolio-flters justify-evenly pb-10 px-5 md:px-20 lg:px-96 flex flex-wrap" data-aos="fade-up" data-aos-delay="100">
