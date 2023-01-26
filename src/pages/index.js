@@ -171,7 +171,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="testimonials" className=" testimonials pb-10 lg:ml-10 md:ml-5 ml-0">
+      {/* <section id="testimonials" className=" testimonials pb-10 lg:ml-10 md:ml-5 ml-0">
         <header className="section-header pb-5 text-center ">
           <h3 className='lg:text-5xl text-3xl'>Our Sponsers</h3>
           <p className='md:px-56 px-5 pb-5'>"Honoring the dedication and determination that lead to success."</p>
@@ -219,7 +219,7 @@ export default function Home() {
           </Swiper>
           <div className="container shadow-xl "><div className='flex text-center justify-center'><span className='p-3 bg-slate-50'><AiOutlineArrowLeft/></span><span className='pt-2 px-4'>swipe</span><span className='p-3 bg-slate-50'><AiOutlineArrowRight/></span></div></div>
         </div>       
-      </section>
+      </section> */}
       <section id="team" className="team">
         <div className="">
           <header className="section-header pb-5 text-center ">
