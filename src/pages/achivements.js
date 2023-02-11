@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from './footer'
 import Navbar from './navbar'
 import achievements from '../data/achievements'
+import Allwinners from '../data/Allwinners'
 const Achievement = () => {
   return (
     <main id="main" className='overflow-x-hidden'>
@@ -17,7 +18,7 @@ const Achievement = () => {
         </div>
       </section>
       <section >
-        <div className="lg:px-40 md:20">
+        <div className="lg:px-20 md:20">
           <section className="text-gray-600 body-font">
             <div className="container px-5 py-24 mx-auto">
               <div className="flex flex-col text-center w-full mb-20">
@@ -25,10 +26,31 @@ const Achievement = () => {
                 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-500 ">"Honoring the dedication and determination that lead to success."</h1>
                 <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500 ">Achievements  include accomplishments related to the association's mission and goals, such as organizing successful events or campaigns, raising funds for a particular cause, or advocating for change on campus or in the community</p>
               </div>
+              <section id="portfolio" className="portfolio">
+                <div className="flex flex-col text-center w-full mb-10">
+                  <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-500 ">OUR WINNERS</h1>
+                </div>
+                <div className="flex flex-wrap   portfolio-container" data-aos="fade-up" data-aos-delay="300">
+                  {(Allwinners.map((singleroject) => {
+                    return (
+                      <div className="lg:w-1/3 md:w-1/2 w-full shadow-2xl  overflow-hidden p-2" key={singleroject.src} data-aos="zoom-out" data-aos-delay="100">
+                        <div data-aos="fade-up" data-aos-delay="300" className=" mr-2 rounded-lg h-64 overflow-y-hidden  portfolio-item filter-app" style={{ backgroundImage: `url(${singleroject.src})`, backgroundSize: 'cover' }}>
+                          <div className="portfolio-info bg-slate-700">
+                            <h4 className='text-2xl text-white text1 pt-20 pl-5'>{singleroject.title}</h4>
+                          </div>
+                        </div>
+                      </div>
+                    )
+                  }))}
+                </div>
+              </section>
+              <div className="flex flex-col text-center w-full mb-20 mt-20">
+                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-500 ">OUR ACHIEVEMENTS</h1>
+              </div>
               <div className="flex flex-wrap">
                 {(achievements.map((singleroject) => {
                   return (
-                    <div key={singleroject.title} data-aos="fade-up"  className="md:w-1/2 w-full h-80 border-l-2 border-gray-200 border-opacity-60 mb-3 overflow-y-hidden py-3 px-5 portfolio-item filter-app">
+                    <div key={singleroject.title} data-aos="fade-up" className="md:w-1/2 w-full h-80 border-l-2 border-gray-200 border-opacity-60 mb-3 overflow-y-hidden py-3 px-5 portfolio-item filter-app">
                       <div className="portfolio-info">
                         <h4 className='text-4xl text1 pb-5'>{singleroject.title}</h4>
                         <p>{singleroject.description}</p>
