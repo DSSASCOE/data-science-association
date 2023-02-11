@@ -80,22 +80,22 @@ var Allteam = [
   },
   {
       "src": "https://i.postimg.cc/SQrSpj5p/magazine2.jpg",
-      "name": "Mr.Raj Pawar",
-      "designation": " Magizine Co-ordinators of DSSA",
-      "category": "magzine"
-  }, 
-  {
-      "src": "https://i.postimg.cc/dQfmdwJX/Social-Media-Photography-1.jpg",
-      "name": "Mr.Prathamesh Katkar",
+      "name": "Ms.Shaleha Khan",
       "designation": " Magizine Co-ordinators of DSSA",
       "category": "magzine"
   },
   {
-      "src": "https://i.postimg.cc/qMCcxSR7/Social-Media-Photography-2.jpg",
-      "name": "Ms.Shaleha Khan",
-      "designation": " Magizine Co-ordinators of DSSA",
+    "src": "https://i.postimg.cc/qMCcxSR7/Social-Media-Photography-2.jpg",
+    "name": "Mr.Raj Pawar",
+    "designation": "Social Media And Photography Head",
+    "category": "magzine"
+},  
+  {
+      "src": "https://i.postimg.cc/dQfmdwJX/Social-Media-Photography-1.jpg",
+      "name": "Mr.Prathamesh Katkar",
+      "designation": "jt.Social Media And Photography",
       "category": "magzine"
-  },  {
+  },{
       "src": "https://i.postimg.cc/9MHmc9Cc/pr-marketing.jpg",
       "name": "Mr.Rushikesh Wani",
       "designation": "Promotional Marketing Head of DSSA",

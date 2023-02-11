@@ -38,9 +38,6 @@ var galleryphotos = [
     }, {
         "src": "https://i.postimg.cc/XJ2xTHS1/dsunite-8.jpg",
         "category": "events"
-    }, {
-        "src": "https://i.postimg.cc/7hfXD3qH/dsunite-9.jpg",
-        "category": "events"
     },
     {
         "src": "https://i.postimg.cc/CLrTQMj7/traditionalday-1.jpg",
