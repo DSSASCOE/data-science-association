@@ -231,7 +231,7 @@ export default function Home() {
                             <div className="profile mt-auto">
                               <h1 className='text-2xl text1 pb-5 font-bold  text-center'>{achievements.title}</h1>
                             </div>
-                            <a href="#" className='w-full'>Visit now</a>
+                            <a href={achievements.link} className='w-full'>Visit now</a>
                           </div>
                         </div>
                       </div>
