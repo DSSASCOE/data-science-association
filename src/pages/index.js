@@ -171,12 +171,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <section id="testimonials" className=" testimonials pb-10 lg:ml-10 md:ml-5 ml-0">
-        <header className="section-header pb-5 text-center ">
+
+      <section id="testimonials" className=" testimonials pb-5 ml-0">
+        <header className="section-header pb-1 text-center ">
           <h3 className='lg:text-5xl text-3xl'>Our Sponsers</h3>
-          <p className='md:px-56 px-5 pb-5'>"Honoring the dedication and determination that lead to success."</p>
+          <p className='md:px-56 px-5 pb-2'>"Honoring the dedication and determination that lead to success."</p>
         </header>
-        <div className=" container shadow-xl block " data-aos="fade-up">
+        <div className="block" data-aos="fade-up">
           <Swiper
             spaceBetween={50}
             slidesPerView={1}
@@ -184,42 +185,65 @@ export default function Home() {
             {(Sponser.map((achievements) => {
               return (
                 <SwiperSlide>
-                  <div className=" w-full  rounded-3xl flex flex-wrap px-20 py-10" key={achievements.description}>
-                    <div className='w-full lg:w-1/3 h-96 z-50 rounded-3xl overflow-hidden'>
-                      <Swiper
-                        autoplay={{
-                          delay: 1000
-                        }
-                        }
-                        spaceBetween={50}
-                        slidesPerView={1}
-                        modules={[Autoplay]}
-                      ><SwiperSlide>
-                          <div className='h-96' style={{ backgroundImage: "url(https://i.postimg.cc/y835pm66/wallpainting-4.jpg)" }}>
-                          </div></SwiperSlide>
-                        <SwiperSlide>
-                          <div className='h-96' style={{ backgroundImage: "url(https://i.postimg.cc/y835pm66/wallpainting-4.jpg)" }}>
-                          </div></SwiperSlide>
-                        <SwiperSlide>
-                          <div className='h-96' style={{ backgroundImage: "url(https://i.postimg.cc/y835pm66/wallpainting-4.jpg)" }}>
-                          </div></SwiperSlide></Swiper>
-                    </div>
-                    <div className="w-full flex flex-col lg:w-2/3" >
-                      <p className='p-10 text-black text-md font-bold'>
-                        {achievements.description}
-                      </p>
-                      <div className="profile mt-auto px-20 lg:px-60">
-                        <h1 className='text-2xl text1 pb-10  text-center'>{achievements.title}</h1>
+                  <section className="discount md:px-10 px-2 py-10" key={achievements.logo}>
+                    <div className="md:px-10 px-1 py-10 shadow-xl shadow-slate-600">
+                      <div className="flex flex-wrap">
+                        <div className="px-5 w-full">
+                          <div className="discount__pic shadow-xl shadow-slate-400 grid md:grid-cols-3 grid-cols-1">
+                            {/* <Swiper
+                              autoplay={{
+                                delay: 1000
+                              }
+                              }
+                              spaceBetween={50}
+                              slidesPerView={1}
+                              modules={[Autoplay]}
+                            >
+                              <SwiperSlide>
+                                <img src="https://i.postimg.cc/SKBmtQb3/sports-6.jpg" alt="" /></SwiperSlide>
+                              <SwiperSlide>
+
+                                <img src="https://i.postimg.cc/SKBmtQb3/sports-6.jpg" alt="" /></SwiperSlide>
+                              <SwiperSlide>
+
+                                <img src="https://i.postimg.cc/SKBmtQb3/sports-6.jpg" alt="" />
+                              </SwiperSlide>
+                            </Swiper> */}
+                            <div className='row-span-2 p-2'><video playsInline autoPlay muted loop className='h-[70vh] shadow-2xl justify-center shadow-slate-800 saturate-150'>
+                              <source src="../assets/sponsers/Hotel_Madhuban_Family_Garden_Resturant-5.mp4" type="video/mp4" />
+                            </video>
+                            </div>
+                            <div className='grid p-2 md:grid-rows-2 grid-rows-1'>
+                            <img src={achievements.logo} className='h-60 p-2 w-full group-hover:scale-110 transition duration-200'></img>
+                            <img src={achievements.image1} className='h-60 p-2 w-full group-hover:scale-110 transition duration-200'></img>
+                            </div>
+                            <div className='grid p-2 md:grid-rows-2 grid-rows-1'>
+                            <img src={achievements.image3} className='h-60 p-2 w-full group-hover:scale-110 transition duration-200'></img>
+                            <img src={achievements.image2} className='h-60 p-2 w-full group-hover:scale-110 transition duration-200'></img>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="w-full p-0">
+                          <div className="py-1 text-center">
+                            <p className='px-5 text-black text-md font-semibold'>
+                              {achievements.description}
+                            </p>
+                            <div className="profile mt-auto">
+                              <h1 className='text-2xl text1 pb-5 font-bold  text-center'>{achievements.title}</h1>
+                            </div>
+                            <a href="#" className='w-full'>Visit now</a>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </section>
                 </SwiperSlide>
               )
             }))}
           </Swiper>
-          <div className="container shadow-xl "><div className='flex text-center justify-center'><span className='p-3 bg-slate-50'><AiOutlineArrowLeft/></span><span className='pt-2 px-4'>swipe</span><span className='p-3 bg-slate-50'><AiOutlineArrowRight/></span></div></div>
-        </div>       
-      </section> */}
+          {/* <div className="container shadow-xl "><div className='flex text-center justify-center'><span className='p-3 bg-slate-50'><AiOutlineArrowLeft /></span><span className='pt-2 px-4'>swipe</span><span className='p-3 bg-slate-50'><AiOutlineArrowRight /></span></div></div> */}
+        </div>
+      </section>
       <section id="team" className="team">
         <div className="">
           <header className="section-header pb-5 text-center ">
@@ -229,7 +253,7 @@ export default function Home() {
           <div className="flex flex-wrap text-center px-4 md:px-20 lg:px-40">
             {(Hometeam.map((Teammember) => {
               return (
-                <div className="lg:w-1/4 w-1/2   overflow-hidden p-2" key={Teammember.src} data-aos="zoom-out" data-aos-delay="100">
+                <div className="lg:w-1/4 w-1/2   overflow-hidden p-2" key={Teammember.src} data-aos="zoom-out">
                   <div className="team-member">
                     <div className="member-img rounded-xl h-80" style={{ backgroundImage: `url(${Teammember.src})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
                       {/* <img src= className="img-fluid h-80 w-full" alt=""/> */}
@@ -345,7 +369,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      
+
       <Footer />
     </>
   )
