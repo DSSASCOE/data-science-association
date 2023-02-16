@@ -185,39 +185,20 @@ export default function Home() {
             {(Sponser.map((achievements) => {
               return (
                 <SwiperSlide>
-                  <section className="discount md:px-10 px-2 py-10" key={achievements.logo}>
-                    <div className="md:px-10 px-1 py-10 shadow-xl shadow-slate-600">
+                  <section className="discount md:px-2 lg:px-10 px-2 py-10" key={achievements.logo}>
+                    <div className="lg:px-10 md:px-5 px-1 py-10 shadow-xl shadow-slate-600">
                       <div className="flex flex-wrap">
                         <div className="px-5 w-full">
                           <div className="discount__pic shadow-xl shadow-slate-400 grid md:grid-cols-3 grid-cols-1">
-                            {/* <Swiper
-                              autoplay={{
-                                delay: 1000
-                              }
-                              }
-                              spaceBetween={50}
-                              slidesPerView={1}
-                              modules={[Autoplay]}
-                            >
-                              <SwiperSlide>
-                                <img src="https://i.postimg.cc/SKBmtQb3/sports-6.jpg" alt="" /></SwiperSlide>
-                              <SwiperSlide>
-
-                                <img src="https://i.postimg.cc/SKBmtQb3/sports-6.jpg" alt="" /></SwiperSlide>
-                              <SwiperSlide>
-
-                                <img src="https://i.postimg.cc/SKBmtQb3/sports-6.jpg" alt="" />
-                              </SwiperSlide>
-                            </Swiper> */}
-                            <div className='row-span-2 p-2'><video playsInline autoPlay muted loop className='h-[70vh] shadow-2xl justify-center shadow-slate-800 saturate-150'>
+                            <div className='row-span-2 p-1/2 md:p-1 lg:p-2'><video playsInline autoPlay muted loop className='lg:h-[70vh] md:h-[50vh] shadow-2xl justify-center shadow-slate-800 saturate-150'>
                               <source src="../assets/sponsers/Hotel_Madhuban_Family_Garden_Resturant-5.mp4" type="video/mp4" />
                             </video>
                             </div>
-                            <div className='grid p-2 md:grid-rows-2 grid-rows-1'>
+                            <div className='grid p-1/2 md:p-1 lg:p-2 md:grid-rows-2 grid-rows-1'>
                             <img src={achievements.logo} className='h-60 p-2 w-full group-hover:scale-110 transition duration-200'></img>
                             <img src={achievements.image1} className='h-60 p-2 w-full group-hover:scale-110 transition duration-200'></img>
                             </div>
-                            <div className='grid p-2 md:grid-rows-2 grid-rows-1'>
+                            <div className='grid p-1/2 md:p-1 lg:p-2 md:grid-rows-2 grid-rows-1'>
                             <img src={achievements.image3} className='h-60 p-2 w-full group-hover:scale-110 transition duration-200'></img>
                             <img src={achievements.image2} className='h-60 p-2 w-full group-hover:scale-110 transition duration-200'></img>
                             </div>
