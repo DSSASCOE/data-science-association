@@ -174,7 +174,7 @@ export default function Home() {
 
       <section id="testimonials" className=" testimonials pb-5 ml-0">
         <header className="section-header pb-1 text-center ">
-          <h3 className='lg:text-5xl text-3xl'>Our Sponsers</h3>
+          <h3 className='lg:text-5xl text-3xl'>Our Sponsors</h3>
           <p className='md:px-56 px-5 pb-2'>"Honoring the dedication and determination that lead to success."</p>
         </header>
         <div className="block" data-aos="fade-up">
